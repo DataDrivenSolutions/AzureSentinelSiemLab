@@ -72,8 +72,8 @@ These improvements included:
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:<br/>
-Start Time 2023-05-03 09:15 AM<br/>
-Stop Time 2023-05-04 09:15 AM
+Start Time 2023-07-01 08:55 AM<br/>
+Stop Time 2023-07-01 08:55 AM
 
 | Metric                   | Count
 | ------------------------ | -----
