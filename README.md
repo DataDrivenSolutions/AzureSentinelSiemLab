@@ -61,4 +61,25 @@ These improvements included:
 - <b>Built-in Firewalls</b>: In my virtual machines I configured the built-in firewalls so that it would deny access from unauthorized users. 
 
 - <b>Private Endpoints</b>: For other Azure resources, I replaced the public endpoints with Private Endpoints. This ensured that access to sensitive resources, such as storage accounts and databases, was limited to only the virtual network.
+## Attack Maps After Hardening / Security Controls
+
+<br />
+
+```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+
+ <br />
+ 
+## Metrics Before Hardening / Security Controls
+
+The following table shows the metrics we measured in our insecure environment for 24 hours:<br/>
+Start Time 2023-05-03 09:15 AM<br/>
+Stop Time 2023-05-04 09:15 AM
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent (Windows VM)            | 4358
+| Syslog (Linux VM)                   | 2345
+| SecurityAlert (Microsoft Defender for Cloud            | 6
+| SecurityIncident (Sentinel Incidents)        | 73
+| NSG Inbound Malicious Flows Allowed | 103
 
