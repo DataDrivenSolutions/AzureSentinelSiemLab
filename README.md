@@ -72,7 +72,7 @@ These improvements included:
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:<br/>
-Start Time 2023-07-01 08:55 AM<br/>
+Start Time 2023-06-30 08:55 AM<br/>
 Stop Time 2023-07-01 08:55 AM
 
 | Metric                   | Count
@@ -86,8 +86,8 @@ Stop Time 2023-07-01 08:55 AM
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our secure environment for 24 hours:<br/>
-Start Time 2023-05-04 4:25 PM<br/>
-Stop Time	2023-05-05 4:25 PM
+Start Time 2023-06-30 4:25 PM<br/>
+Stop Time	2023-07-01 4:25 PM
 
 
 | Metric                   | Count
@@ -99,3 +99,26 @@ Stop Time	2023-05-05 4:25 PM
 | NSG Inbound Malicious Flows Allowed | 0
 
 <br/>
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent (Windows VM)            | 2364
+| Syslog (Linux VM)                   | 24
+| SecurityAlert (Microsoft Defender for Cloud            | 0
+| SecurityIncident (Sentinel Incidents)        | 0
+| NSG Inbound Malicious Flows Allowed | 0
+
+<br/>
+
+
+## Utilizing NIST 800.61r2 Computer Incident Handling Guide
+
+For each simulated attack I practiced incident responses following NIST SP 800-61 r2.
+
+![NIST 800.61](https://i.imgur.com/6PTG7c0l.png)
+
+Each organization will have policies related to an incident response that should be followed. This event is just a walkthrough for possible actions to take in the detection of malware on a workstation.  
+
+#### Preparation
+
+- The Azure lab was set up to ingest all of the logs into Log Analytics Workspace, Sentinel and Defender were configured, and alert rules were put in place.
+
