@@ -83,3 +83,19 @@ Stop Time 2023-07-01 08:55 AM
 | SecurityIncident (Sentinel Incidents)        | 73
 | NSG Inbound Malicious Flows Allowed | 103
 
+## Metrics After Hardening / Security Controls
+
+The following table shows the metrics we measured in our secure environment for 24 hours:<br/>
+Start Time 2023-05-04 4:25 PM<br/>
+Stop Time	2023-05-05 4:25 PM
+
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent (Windows VM)            | 2364
+| Syslog (Linux VM)                   | 24
+| SecurityAlert (Microsoft Defender for Cloud            | 0
+| SecurityIncident (Sentinel Incidents)        | 0
+| NSG Inbound Malicious Flows Allowed | 0
+
+<br/>
